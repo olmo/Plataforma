@@ -1,0 +1,21 @@
+{% extends "archivos/base.html" %}
+{% block content %}
+    <h1>Añadir examen</h1>
+    {% if apartado == 0 %}
+        <form action="{% url archivos.views.add %}" method="post" enctype="multipart/form-data">{% csrf_token %}
+            <label for="id_universidad">Universidad:</label> {{ form.universidad }}
+            <label for="id_carrera">Carrera:</label> {{ form.carrera }}
+            <label for="id_asignatura">Asignatura:</label> {{ form.asignatura }}
+            <label for="id_anno">Año:</label> {{ form.anno }}
+            <label for="id_convocatoria">Convocatoria:</label> {{ form.convocatoria }}
+            <label for="id_solucion">Solución:</label> {{ form.solucion }}
+            <label for="id_archivo">Archivo:</label> {{ form.archivo }}
+            <input type="hidden" name="apartado" value="1">
+            <br class="clear">
+            <input type="submit" class="submit" value="Subir">
+        </form>
+    {% endif %}
+    {% if apartado == 1 %}
+        <div class="success">Examen añadidor correctamente.</div>
+    {% endif %}
+{% endblock %}
