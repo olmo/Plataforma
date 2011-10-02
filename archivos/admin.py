@@ -2,7 +2,7 @@ from archivos.models import Examen, Archivo
 from django.contrib import admin
 from django.forms import ModelForm
 from django import forms
-from asignaturas.models import Carrera, Universidad
+from asignaturas.models import Universidad
 from smart_selects.form_fields import ChainedModelChoiceField
 
 class ExamenForm(ModelForm):
@@ -15,7 +15,7 @@ class ExamenForm(ModelForm):
 
 class ExamenAdmin(admin.ModelAdmin):
     form = ExamenForm
-    fields = ['universidad', 'carrera', 'asignatura', 'anno', 'convocatoria', 'archivo', 'solucion']
+    fields = ['universidad', 'carrera', 'asignatura', 'anno', 'convocatoria', 'archivo', 'solucion', 'estado', 'usuario']
 
 admin.site.register(Archivo)
 admin.site.register(Examen, ExamenAdmin)

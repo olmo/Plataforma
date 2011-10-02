@@ -1,14 +1,3 @@
-@font-face {
-	font-family: "HVD Comic Serif Pro";
-	src: url("../fonts/hvd_comic_serif_pro.eot");
-	src: local("HVD Comic Serif Pro"), local("HVD-Comic-Serif-Pro"),
-		url("../fonts/type/hvd_comic_serif_pro.woff") format("woff"),
-		url("../fonts/HVD_Comic_Serif_Pro.otf") format("opentype"),
-		url("../fonts/hvd_comic_serif_pro") format("svg");
-	}
-
-/* dejanc@gmail.com */
-
 body {
 background:#f2f7e6;
 color:#6a6f2d;
@@ -262,6 +251,18 @@ width:480px;
 float:left;
 background:#ecf0e0;
 border:1px solid #dbe1cd;
+margin:0 0 0 14px;
+padding:30px;
+-moz-border-radius:7px;
+-webkit-border-radius:7px;
+border-radius:7px;
+}
+
+#mid2 {
+width:715px;
+float:left;
+background:#ffffff;
+border:1px solid #EAEAEA;
 margin:0 0 0 14px;
 padding:30px;
 -moz-border-radius:7px;

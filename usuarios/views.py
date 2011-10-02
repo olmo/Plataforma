@@ -19,11 +19,11 @@ def login(request):
     if user is not None:
         if user.is_active:
             auth_login(request, user)
-    return HttpResponseRedirect('/peliculas/')
+    return HttpResponseRedirect('/')
 
 def logout_view(request):
     logout(request)
-    return HttpResponseRedirect('/peliculas/')
+    return HttpResponseRedirect('/')
 
 def registro(request):
     try:

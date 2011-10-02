@@ -21,14 +21,14 @@ def add(request):
         return render_to_response('archivos/add.html', {'form':form, 'apartado': apartado}, context_instance=RequestContext(request))
 
     elif apartado == 1:
-        e = Examen()
-        f = ExamenForm(request.POST, request.FILES, instance=e)
+        request.POST['estado'] = 'P'
+        f = ExamenForm(request.POST, request.FILES)
         f.save()
         return render_to_response('archivos/add.html', {'apartado': apartado}, context_instance=RequestContext(request))
 
 def select_ajax(request):
     id = request.GET['id']
-    examenes = Examen.objects.filter(id=id)
+    examenes = Examen.objects.filter(asignatura=id)
     l = list()
     for examen in examenes:
         if examen.convocatoria == 'S':

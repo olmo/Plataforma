@@ -119,7 +119,8 @@ INSTALLED_APPS = (
     'django.contrib.admindocs',
     'smart_selects',
     'asignaturas',
-    'archivos'
+    'archivos',
+    'usuarios'
 )
 
 # A sample logging configuration. The only tangible logging
@@ -144,3 +145,5 @@ LOGGING = {
         },
     }
 }
+
+AUTH_PROFILE_MODULE = 'usuarios.Usuario'

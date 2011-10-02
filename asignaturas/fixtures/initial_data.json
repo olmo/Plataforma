@@ -1,0 +1,18 @@
+[
+  {
+    "pk": 1,
+    "model": "asignaturas.universidad",
+    "fields": {
+      "nombre": "Universidad de Granada",
+      "abreviatura": "UGR"
+    }
+  },
+  {
+    "pk": 1,
+    "model": "asignaturas.carrera",
+    "fields": {
+      "nombre": "Fundamentos Tecnológicos de los Computadores",
+      "universidad": 1
+    }
+  }
+]

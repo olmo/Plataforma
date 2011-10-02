@@ -19,6 +19,10 @@ urlpatterns = patterns('',
     (r'^archivos/add$', 'archivos.views.add'),
     (r'^archivos/select_ajax$', 'archivos.views.select_ajax'),
 
+    (r'^login$', 'usuarios.views.login'),
+    (r'^salir$', 'usuarios.views.logout_view'),
+    (r'^registro$', 'usuarios.views.registro'),
+
     # Uncomment the next line to enable the admin:
     url(r'^admin/', include(admin.site.urls)),
 
