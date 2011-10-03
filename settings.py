@@ -121,7 +121,7 @@ INSTALLED_APPS = (
     'django.contrib.admindocs',
     'smart_selects',
     'asignaturas',
-    'archivos',
+    'material',
     'usuarios'
 )
 

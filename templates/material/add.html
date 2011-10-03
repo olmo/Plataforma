@@ -1,8 +1,8 @@
-{% extends "archivos/base.html" %}
+{% extends "material/base.html" %}
 {% block content %}
     <h1>Añadir examen</h1>
     {% if apartado == 0 %}
-        <form action="{% url archivos.views.add %}" method="post" enctype="multipart/form-data">{% csrf_token %}
+        <form action="{% url material.views.add %}" method="post" enctype="multipart/form-data">{% csrf_token %}
             <label for="id_universidad">Universidad:</label> {{ form.universidad }}
             <label for="id_carrera">Carrera:</label> {{ form.carrera }}
             <label for="id_asignatura">Asignatura:</label> {{ form.asignatura }}
