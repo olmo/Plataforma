@@ -36,7 +36,7 @@ $(document).ready(function(){
 				resultHtml+='<tr><td>'+item.anno+'</td>';
                 resultHtml+='<td>'+item.convocatoria+'</td>';
                 resultHtml+='<td>'+item.solucion+'</td>';
-                resultHtml+='<td><a href="'+item.archivo+'">'+item.archivo+'</a></td>';
+                resultHtml+='<td><a href="'+item.archivo+'"><img src="/site_media/imagenes/download.png" height="25px"/></a><a href="'+item.id+'"><img src="/site_media/imagenes/warning.png" height="25px"/></a></td>';
 				resultHtml+='</tr>';
 			});
             resultHtml+='</tbody></table>';

@@ -1,5 +1,4 @@
 *.pyc
 .idea/*
-settings.py
 db.sqlite
 site_media/archivos/*
