@@ -1,0 +1,13 @@
+{% extends "correos/base.html" %}
+
+{% block content %}
+<h1>Mensajes Entrada</h1>
+ <table>
+  <td><th>Remitente</th><th>Asunto</th><th>Fecha</th></td>
+  {% if lista %}
+  {% for correo in lista %}
+   <a href="#"><td><tr>{{ correo.remitente }}</tr><tr>{{ correo.asunto }}</tr><tr>{{ correo.fecha }}</tr></td></a>
+  {% endfor %}
+  {% endif %}
+ </table>
+{% endblock %}

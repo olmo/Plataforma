@@ -1,0 +1,10 @@
+{% extends "correos/base.html" %}
+
+{% block content %}
+<h1>Componer</h1>
+<form action="{% url correos.views.componer %} " method="post">{% csrf_token %}
+    {{ form.as_p }}
+<input type="submit"/>
+</form>
+<div id="resultados"></div>
+{% endblock %}

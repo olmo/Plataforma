@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block head %}
+    <script type="text/javascript" src="/site_media/js/examenes.js"></script>
+{% endblock %}
+
+{% block left %}
+<div class="sidebarbox">
+    <div class="sidebarheader">
+        <a href="#">Menú</a>
+    </div><!-- sidebarheader -->
+    <div class="sidebarcontent">
+        <ul>
+            <li><a href="{% url correos.views.componer %}">Nuevo</a></li>
+            <li><a href="{% url correos.views.index %}">Entrada</a></li>
+            <li><a href="{% url correos.views.out %}">Salida</a></li>
+        </ul>
+    </div>
+</div>
+{% endblock %}
