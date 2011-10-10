@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block contenido %}
+    <div id="stylized" class="myform">
+        <h1>Formulario de registro</h1>
+        <p>Rellene todos los campos</p>
+        <form name="registro" action="/peliculas/registro" method="POST">
+            {% csrf_token %}
+            <label>Nombre de usuario: </label><input type="text" name="username" />
+            <label>Email: </label><input type="text" name="email" />
+            <label>Contraseña: </label><input type="password" name="password" />
+            <label>Reintroduce la contraseña: </label><input type="password" name="pass2" />
+            <input type="hidden" name="apartado" value="1" />
+            <button type="submit">Registrar</button>
+            <div class="spacer"></div>
+        </form>
+    </div>
+{% endblock %}
