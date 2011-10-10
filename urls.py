@@ -22,6 +22,10 @@ urlpatterns = patterns('',
     (r'^login$', 'usuarios.views.login'),
     (r'^salir$', 'usuarios.views.logout_view'),
     (r'^registro$', 'usuarios.views.registro'),
+    
+    (r'^buzon$', 'correos.views.index'),
+    (r'^buzon/out$', 'correos.views.out'),
+    (r'^buzon/componer$', 'correos.views.componer'),
 
     # Uncomment the next line to enable the admin:
     url(r'^admin/', include(admin.site.urls)),

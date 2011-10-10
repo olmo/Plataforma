@@ -122,7 +122,8 @@ INSTALLED_APPS = (
     'smart_selects',
     'asignaturas',
     'archivos',
-    'usuarios'
+    'usuarios',
+    'correos'
 )
 
 # A sample logging configuration. The only tangible logging
