@@ -3,10 +3,10 @@
 {% block content %}
 <h1>Mensajes Entrada</h1>
  <table>
-  <td><th>Remitente</th><th>Asunto</th><th>Fecha</th></td>
+  <tr><th>Remitente</th><th>Asunto</th><th>Fecha</th></tr>
   {% if lista %}
   {% for correo in lista %}
-   <a href="#"><td><tr>{{ correo.remitente }}</tr><tr>{{ correo.asunto }}</tr><tr>{{ correo.fecha }}</tr></td></a>
+   <tr><td><a href="#">{{ correo.remitente.user.username }}</a></td><td><a href="#">{{ correo.asunto }}</a></td><td>{{ correo.fecha }}</td></tt>
   {% endfor %}
   {% endif %}
  </table>
