@@ -15,7 +15,7 @@ $(document).ready(function(){
 		}
 
 		runningRequest=true;
-		request = $.getJSON('/archivos/select_ajax',{
+		request = $.getJSON('/material/select_ajax',{
 			id:$id_asign.val()
 		},function(data){
 			showResults(data,$id_asign.val());

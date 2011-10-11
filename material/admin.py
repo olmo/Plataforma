@@ -1,4 +1,4 @@
-from archivos.models import Examen, Archivo
+from material.models import Examen, Archivo
 from django.contrib import admin
 from django.forms import ModelForm
 from django import forms

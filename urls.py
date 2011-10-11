@@ -10,14 +10,14 @@ urlpatterns = patterns('',
     # Examples:
     # url(r'^$', 'plataforma.views.home', name='home'),
     # url(r'^plataforma/', include('plataforma.foo.urls')),
-    url(r'^$', 'archivos.views.index', name='inicio'),
+    url(r'^$', 'material.views.index', name='inicio'),
 
     # Uncomment the admin/doc line below to enable admin documentation:
     url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
 
-    (r'^archivos/$', 'archivos.views.index'),
-    (r'^archivos/add$', 'archivos.views.add'),
-    (r'^archivos/select_ajax$', 'archivos.views.select_ajax'),
+    (r'^material/$', 'material.views.index'),
+    (r'^material/add$', 'material.views.add'),
+    (r'^material/select_ajax$', 'material.views.select_ajax'),
 
     (r'^login$', 'usuarios.views.login'),
     (r'^salir$', 'usuarios.views.logout_view'),
